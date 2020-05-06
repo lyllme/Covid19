@@ -1,0 +1,100 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+
+\title{Covid19}
+\author{Shiori Uji}
+\date{April 29, 2020}
+
+\usepackage{natbib}
+\usepackage{graphicx}
+\usepackage{url}
+
+
+
+\begin{document}
+
+\maketitle
+
+\section{Introduction}
+Covid 19, one of the corona virus was found in Wuhan China around January, and spread to the whole world immediately. It killed hundreds and thousands of people, damages the world economy. How number of infected people increase is one of the key parameter for everyone who would like to predict future governmental and social policy. For instance, policy makers and managers who had to prepare for production of medical resources and allocation, restaurants and shop owners have to calculate how much cash they have, and how long they can keep their business under curfew of not going out. Predicting the change of infected cases is critical to save patients, policy makers, and business owners to keep their lives, social stability and their lives.
+
+\section{Problem}
+Data that might contribute to determining number of new patients of corona virus per day  might include reported cases per day per countries and fatalities per day per countries. This is time-series data set, starting from the beginning of January.******
+
+\section{Interest}
+Obviously, decision makers such as business leaders, doctors, and policy makers would like to know this information for both medical and business purposes. Others who are seeking for their job, students who are watching for their entrance exam, family members who have to take care of other members will also be interested for their decision making.
+-------
+where you discuss the business problem and who would be interested in this project.
+the target of this research is to expect theoretical number of infected persons
+
+if no effort of prevention protection, the number of cases depends on the case one day before the day
+
+at initial phase in spreading, there is enough supply of test kits to inspect people who want to
+however, at the latter phase, they are distributed to those who have high possibility of positivity
+thus government cannot always grasp the actual number of infected people
+I have strong interest in Japan, where there are not enough test kits as Korea and Singapore.
+As of hogehoge, Japanese government recognize @ cases, that is not large as Italy and France.
+in order to examine the number of potential cases in Japan, I could examine the trend of Italy and US where the largest number of cases reported as of today, and compare the gap between Japan and these two countries.
+-----------------
+
+\section{Data acquisition and cleaning}
+
+Data sources
+All data used for this analysis was taken COVID19 Global Forecasting (Week2) competition held at kaggle
+(https://www.kaggle.com/c/covid19-global-forecasting-week-2/data).
+
+Data cleaning
+There was almost no missing values, however, some countries like US  counts their cases regionally whereas other countries count by country. In order to compare differences in nations, I summed up all the regional data to one country.
+
+Feature selection
+After data cleaning, there were hogehoge samples and hogehoge features in the data.
+
+\section{Exploratory Data analysis}
+Calculation of target variable
+
+As of March 31st, over hogehoge countries reported confirmed cases, and hoeghoge countries have fatalities.
+
+Major countries struggling for Covid-19
+graph: heat map of spreading areas
+
+Inter-nation comparison of mortality rate
+graph: death rate as of March 31st(cholopleath)
+
+Comparison of 6 countries
+graph; comparison of 6 countries
+graph: US and ITaly
+
+which represents the main component of the report where you discuss and describe any exploratory data analysis that you did, any inferential statistical testing that you performed, if any, and what machine learnings were used and why.
+
+
+\section{Predictive modeling}
+There are two types of models, regression and classification. In this study, I carried out regression modeling to predict future change of cases.
+measure us with sigmoid and exponential
+with accumulated and fatalities
+?compare the real result and fact?
+
+\section{Result}
+
+governmental policy
+
+check if model is valid enough?
+Italy, with one of Europe’s tightest lockdowns, is preparing for “Phase 2” – an easing affecting much more of daily life than the very limited easing that started on 14 April.
+https://www.bbc.com/news/topics/crr7mlg0d2wt/italy
+
+\section{Discussion}
+Stay home!
+
+\section{Summary}
+
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=1.7]{universe}
+\caption{The Universe}
+\label{fig:universe}
+\end{figure}
+
+\section{Conclusion}
+``I always thought something was fundamentally wrong with the universe'' \citep{adams1995hitchhiker}ttps://www.kaggle.com/c/covid19-global-forecasting-week-2/data)
+\bibliographystyle{plain}
+\bibliography{references}
+\end{document}
